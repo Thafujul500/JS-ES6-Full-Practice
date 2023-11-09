@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+<body>
+
+    <label for="input">Please type something: </label><input type="text">
+
+    <p class="thanks"></p>
+
+    <script>
+        
+        let input = document.querySelector("input");
+        let thanks = document.querySelector(".thanks");
+
+        input.addEventListener("keyup", () => {
+            // thanks.innerHTML = this.value;
+            setTimeout(() => {
+                thanks.innerHTML = `You have click: ${input.value}`
+            },1000)
+        });
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
